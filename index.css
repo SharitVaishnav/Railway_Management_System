@@ -1,0 +1,214 @@
+.navbar{
+    background-color: aqua;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+
+}
+
+.details{
+    background-color: burlywood;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+        /* Google Fonts Import Link */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+        }
+        body{
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #c1f7f5;
+        }
+        .nav-links{
+            position: absolute;
+            right : 100px;
+          display: flex;
+          align-items: center;
+          background: #fff;
+          padding: 20px 15px;
+          border-radius: 12px;
+          box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        .nav-links li{
+          list-style: none;
+          margin: 0 12px;
+        }
+        .nav-links li a{
+          position: relative;
+          color: #333;
+          font-size: 20px;
+          font-weight: 500;
+          padding: 6px 0;
+          text-decoration: none;
+        }
+        .nav-links li a:before{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 3px;
+          width: 0%;
+          background: #34efdf;
+          border-radius: 12px;
+          transition: all 0.4s ease;
+        }
+        .nav-links li a:hover:before{
+          width: 100%;
+        }
+        .nav-links li.center a:before{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .nav-links li.upward a:before{
+          width: 100%;
+          bottom: -5px;
+          opacity: 0;
+        }
+        .nav-links li.upward a:hover:before{
+          bottom: 0px;
+          opacity: 1;
+        }
+        .nav-links li.forward a:before{
+          width: 100%;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.4s ease;
+        }
+        .nav-links li.forward a:hover:before{
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+        .nav{
+            display: flex;
+          align-items: center;
+          background: #4a98f7;
+          padding: 20px 15px;
+          border-radius: 12px;
+          box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            height : 100px;
+            width : 95%;
+            position : absolute;
+            top : 10px;
+        }
+        .logo{
+            text-decoration : none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: #fff;
+        }
+        
+        .profile{
+            background-color: rgba(255, 255, 255, 0.555);
+            border: 1px solid rgba(255, 255, 255, 0.555);
+            border-radius: 10px;
+            filter:blur(2);
+            position : absolute;
+            height : 480px;
+            width : 250px;
+            left : 40px;
+            top : 160px;
+            border-radius : 12px;
+        }
+        
+        .loginform{
+            background-color: rgba(255, 255, 255, 0.555);
+            border: 1px solid rgba(255, 255, 255, 0.555);
+            border-radius: 10px;
+            filter:blur(2);
+            position : absolute;
+            height : 500px;
+            width : 350px;
+            display: flex;
+            justify-content: center;
+            border-radius : 12px;
+        }
+        
+        
+        h1{
+          font-size: 30px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .booking {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        
+        table {
+          width: 800px;
+          border-collapse: collapse;
+          overflow: hidden;
+          box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        th,
+        td {
+          padding: 15px;
+          background-color: rgba(255,255,255,0.2);
+          color: #fff;
+        }
+        
+        th {
+          text-align: left;
+        }
+        
+        thead {
+          th {
+            background-color: #55608f;
+          }
+        }
+        
+        tbody {
+          tr {
+            &:hover {
+              background-color: rgba(255,255,255,0.3);
+            }
+          }
+          td {
+            position: relative;
+            &:hover {
+              &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -9999px;
+                bottom: -9999px;
+                background-color: rgba(255,255,255,0.2);
+                z-index: -1;
+              }
+            }
+          }
+        }
+        
+        
+        /* demo styles */
+        
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+        body{
+          background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+          background: linear-gradient(to right, #25c481, #25b7c4);
+          font-family: 'Roboto', sans-serif;
+        }
+        section{
+          margin: 50px;
+        }
+        
